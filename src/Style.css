@@ -1,0 +1,263 @@
+
+
+/* ---------------------- Header ---------------------- */
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #6a5af9, #4cc9f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+header p {
+  margin: 6px 0 0 0;
+  font-size: 15px;
+  color: #666;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+
+/* ---------------------- Task Form ---------------------- */
+
+.task-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid #f1f1f1;
+}
+
+/* Input Area */
+#inp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #faf9ff;
+  border: 1px solid #dedcff;
+  transition: 0.2s ease;
+}
+
+#inp:hover {
+  border-color: #6b5cff;
+  box-shadow: 0 0 0 3px rgba(108, 90, 255, 0.15);
+}
+
+#inp input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  background: transparent;
+  font-weight: 500;
+}
+
+/* Add Task Button */
+#inp button {
+  border: none;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #6a5af9, #4cc9f0);
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+#inp button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(80, 65, 255, 0.3);
+}
+
+/* Dropdown Area */
+#btns {
+  display: flex;
+  gap: 10px;
+}
+
+#btns select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dedcff;
+  background: #fafaff;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#btns select:hover {
+  border-color: #6b5cff;
+  box-shadow: 0 0 0 3px rgba(108, 90, 255, 0.15);
+}
+
+
+
+
+/* ------------------------------
+   TASK LIST — PREMIUM STYLE
+--------------------------------*/
+.task-list li {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+}
+
+/* Hover effect for card */
+.task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Task text style — modern */
+.task-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  letter-spacing: 0.2px;
+}
+
+/* Category + priority text */
+.task-meta {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Completed tasks */
+.task-list li.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/* ------------------------------
+   ACTION BUTTONS — NEW STYLE
+--------------------------------*/
+.action-btn {
+  border: none;
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+/* Complete button (Green) */
+.action-btn.complete {
+  color: #0d8a4f;
+  background: #e6f8ee;
+}
+.action-btn.complete:hover {
+  background: #c8f3db;
+}
+
+/* Undo (Sky blue) */
+.action-btn.undo {
+  color: #005ecb;
+  background: #e6f1ff;
+}
+.action-btn.undo:hover {
+  background: #d6e7ff;
+}
+
+/* Delete (Red) */
+.action-btn.delete {
+  color: #d12c2c;
+  background: #ffeaea;
+}
+.action-btn.delete:hover {
+  background: #ffd4d4;
+}
+/* ---------------------- Progress Tracker ---------------------- */
+
+.progress-tracker {
+  margin-top: 20px;
+  text-align: center;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.progress-tracker p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.3px;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e9e9e9;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #6a5af9, #4cc9f0);
+  border-radius: 50px;
+  transition: width 0.4s ease-in-out;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.12);
+}
+/* ---------------------- Clear All Tasks Button ---------------------- */
+
+.clear-btn {
+  margin-top: 18px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  color: #ffffff;
+
+  box-shadow: 0 4px 12px rgba(255, 111, 97, 0.35);
+  transition: 0.25s ease-in-out;
+
+  display: inline-block;
+}
+
+.clear-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 111, 97, 0.45);
+}
+
+.clear-btn:active {
+  transform: scale(0.96);
+}
